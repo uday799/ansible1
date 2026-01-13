@@ -1,0 +1,7 @@
+- name: print the datatypes
+  hosts: local
+  connection: local
+  vars:
+   course_name: "AWS WITH DEVOPS"
+   DURATION: 120
+   
