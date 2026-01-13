@@ -4,4 +4,18 @@
   vars:
    course_name: "AWS WITH DEVOPS"
    DURATION: 120
-   
+   live: true
+   topics:
+   - linux
+   - AWS
+   - docker
+   - terraform
+   tools:
+    ci: jenkins
+    cloud: was
+    iac: terraform
+  tasks:
+  - name: print the course information
+    ansible.builtin.debug:
+      msg: "Hello i am learning {{ course_name}}, duration: {{ DURATION }}, is it live: {{ live }}, topics are: {{ topics }}, tools are: {{ tools }}"  
+
