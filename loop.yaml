@@ -1,0 +1,15 @@
+- name: looping
+  hosts: local
+  connection: local
+  tasks:
+  - name: printing the loops
+    ansible.builtin.package:
+     name: "{{ item }}"
+     state" present
+    loop:
+    - gcc
+    - mysql
+    - git
+    - zip 
+
+  
