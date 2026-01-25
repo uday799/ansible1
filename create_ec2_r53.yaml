@@ -27,7 +27,7 @@
       image_id: "{{ ami_id }}"
       instance_type: "{{ instance_type }}"
      loop: "{{ instances }}"
-     register: "{{ ec2_info }}"
+     register: ec2_info
 
    - name: print private address
      ansible.builtin.debug:
