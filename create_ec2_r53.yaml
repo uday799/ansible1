@@ -5,7 +5,7 @@
    subnet_id: subnet-0641e5abdbea94853
    ami_id: ami-0220d79f3f480ecf5
    sg_id: sg-01dd87a73633c63eb
-   instance_type: t3_micro
+   instance_type: t3.micro
    zone: udayops.online
    instances:
    - mysql
